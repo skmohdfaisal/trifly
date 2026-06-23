@@ -21,11 +21,9 @@ export async function POST(req: Request) {
     }
 
     const prediction = await replicate.predictions.create({
-      version: "25a173108cff36ef9f80f854c162d01df9e6528be175794b8115892d80d59b56",
+      version: "25a173108cff36ef9f80f854c162d01df9e6528be175794b81158fa03836d953",
       input: {
-        audio: audioUrl,
-        jobs: 0,
-        stem: "vocals",
+        audio: audioUrl
       }
     });
 
